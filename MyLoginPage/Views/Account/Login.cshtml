@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<h1>Testing Testing</h1>
+<div class=" w3l-login-form">
+    <h2>Login Here</h2>
+    <form action="Verify" method="POST">
+
+        <div class=" w3l-form-group">
+            <label>Username:</label>
+            <div class="group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="Name" class="form-control" placeholder="Username" required="required" />
+            </div>
+        </div>
+        <div class=" w3l-form-group">
+            <label>Password:</label>
+            <div class="group">
+                <i class="fas fa-unlock"></i>
+                <input type="password" name="Password" class="form-control" placeholder="Password" required="required" />
+            </div>
+        </div>
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+            <p><input type="checkbox">Remember Me</p>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+    <p class=" w3l-register-p">Don't have an account?<a href="#" class="register"> Register</a></p>
+</div>
+<footer>
+    <p class="copyright-agileinfo"> &copy; 2018 Material Login Form. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+</footer>
